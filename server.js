@@ -5,6 +5,7 @@ import apiRoutes from './routes/apiRoutes.js';
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+//Add static folder endpoint//
 const staticFolder = 'public';
 app.use(express.static(staticFolder));
 app.use(express.static('public'))
