@@ -1,4 +1,5 @@
-fetch('./api/dining.json')
+async function fetchInfo() {
+  const response = await fetch('./api/dining.json')
   .then(
     (response) => {
       if (response.status !== 200) {

@@ -3,16 +3,19 @@
     <head>
         <meta charset='utf-8'>
         <title>Nikita Patel W8</title>
+        <!--css-->
         <link rel='stylesheet' href='styles.css'>
         <!--added bulma-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> 
         <link href='dataTables.bulma.min.css' rel='styles.css'>
+        <!--js-->
+        <script src='scripts.js'></script>
     </head>
     
     <body>
-        <!--<div class='container' style='margin: top 10px;'>--> 
-            <h>W8 Nikita Patel</h>
-            <table class='table' width='100%'>
+        <div class='container' style='margin: top 10px;'>
+            <h1>W8 Nikita Patel</h1>
+            <table class='table is-bordered' width='100%'>
                 <thead>
                     <tr>
                         <th>Hall ID</th>
@@ -22,25 +25,23 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th>1</th>
-                        <th>North Campus Diner</th>
-                        <th>4121 Farm Dr, College Park, MD 20742</th>
+                        <td>1</td>
+                        <td>North Campus Diner</td>
+                        <td>4121 Farm Dr, College Park, MD 20742</td>
                     </tr>
                     <tr>
-                        <th>2</th>
-                        <th>South Campus Dining Hall</th>
-                        <th>7093 Preinkert Dr, College Park, MD 20740</th>
+                        <td>2</td>
+                        <td>South Campus Dining Hall</td>
+                        <td>7093 Preinkert Dr, College Park, MD 20740</td>
                     </tr>
                     <tr>
-                        <th>3</th>
-                        <th>251 North Dining Hall</th>
-                        <th>3951 Denton Service Ln, College Park, MD 2074</th>
+                        <td>3</td>
+                        <td>251 North Dining Hall</td>
+                        <td>3951 Denton Service Ln, College Park, MD 2074</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-
-        <script src='DiningHall.js'></script>
+        <!--</div>-->
         <script src='dataTables.bulma.min.js'></script>
         <script>
             $(DiningHall).ready(function() {
@@ -48,7 +49,6 @@
             });
             
         </script>
-    
 
     </body>
 </html>
