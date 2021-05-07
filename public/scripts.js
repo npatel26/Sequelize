@@ -1,5 +1,9 @@
-async function fetchInfo() {
-  const response = await fetch('./api/dining.json')
+import { response } from "express";
+async function Dining() {
+  const request = await fetch('/api/dining');
+  const getData = await request.json();
+  const getTable = document.getElementById('container');
+  
   .then(
     (response) => {
       if (response.status !== 200) {
